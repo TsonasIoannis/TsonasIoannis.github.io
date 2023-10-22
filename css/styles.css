@@ -84,11 +84,19 @@ ul {
   margin: 0;
 }
 
-.divider > section {
+.divider-white > section {
   border-bottom: 1px dashed #F7FFF7;
 }
 
-.divider > section:last-of-type {
+.divider-black > section {
+  border-bottom: 1px dashed;
+}
+
+.divider-white > section:last-of-type {
+  border-bottom: none;
+}
+
+.divider-black > section:last-of-type {
   border-bottom: none;
 }
 
