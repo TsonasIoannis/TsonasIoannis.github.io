@@ -134,7 +134,7 @@ header {
 ------------------------------------
 */
 .work-experience {
-  background-image: url(../images/emile-perron-unsplash.jpg);
+  background-image: url(../images/peter-gargiulo-cGNCepznaV8-unsplash.jpg);
   background-size: cover;
   background-position: top left;
   padding-bottom: 16px;
@@ -145,11 +145,10 @@ header {
 ------------------------------------
 */
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-image: url(../images/jason-dent-S53ekmu8KkE-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 16px;
-  color: #F7FFF7;
 }
 
 .education p {
@@ -160,10 +159,11 @@ header {
 ------------------------------------
 */
 .skills {
-  background-image: url(../images/kelly-sikkema-unsplash.jpg);
+  background-image: url(../images/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg);
   background-size: cover;
   background-position: top center;
   padding-bottom: 16px;
+  color: #F7FFF7;
 }
 
 .skills li {
@@ -174,9 +174,9 @@ header {
 ------------------------------------
 */
 .interests {
-  background-image: url(../images/jess-bailey-unsplash.jpg);
+  background-image: url(../images/alexander-grey-eMP4sYPJ9x0-unsplash.jpg);
   background-size: cover;
-  background-position: top right;
+  background-position: top left;
   padding-bottom: 16px;
 }
 
@@ -218,10 +218,26 @@ footer {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
-  
+
   .contact-list {
     display: flex;
     justify-content: center;
+  }
+
+  .work-experience {
+    background-image: url(../images/emile-perron-unsplash.jpg);
+  }
+
+  .education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  }
+
+  .skills {
+    background-image: url(../images/kelly-sikkema-unsplash.jpg);
+  }
+
+  .interests {
+    background-image: url(../images/jess-bailey-unsplash.jpg);
   }
 }
 
