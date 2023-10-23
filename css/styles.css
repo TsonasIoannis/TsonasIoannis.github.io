@@ -1,14 +1,3 @@
-/*
-COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
-*/
-
-
 /* Global styles
 ------------------------------------
 */
@@ -211,7 +200,7 @@ footer {
 /* Responsive
 ------------------------------------
 */
-@media screen and (width>750px){
+@media screen and (width>768px){
   header, footer {
     text-align: center;
   }
@@ -234,14 +223,20 @@ footer {
 
   .work-experience {
     background-image: url("../images/emile-perron-unsplash.jpg");
+    background-size: cover;
+    background-position: top left;
   }
 
   .education {
     background-image: url("../images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top center;
   }
 
   .skills {
     background-image: url("../images/kelly-sikkema-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
   }
 
   .interests {
@@ -249,16 +244,24 @@ footer {
   }
 }
 
-/* @media screen and (max-width:749px){
-  h1 {
-    font-size: 75px;
-    line-height: 0.9;
-    margin-bottom: 20px;
+@media screen and (width>1024px){
+
+  .work-experience {
+    background-image: url("../images/emile-perron-unsplash-2k.jpg");
+    background-size: cover;
+    background-position: top left;
   }
-  h2 {
-    line-height: 1;
+}
+
+@media screen and (width>1440px){
+
+  .work-experience {
+    background-image: url("../images/emile-perron-unsplash-4k.jpg");
+    background-size: cover;
+    background-position: left;
   }
-  .contact-list a {
-    padding: 5px;
+  .skills {
+    color: black;
   }
-} */
+  
+}
