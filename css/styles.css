@@ -200,7 +200,7 @@ footer {
 /* Responsive
 ------------------------------------
 */
-@media screen and (width>768px){
+@media screen and (min-width:768px){
   header, footer {
     text-align: center;
   }
@@ -245,8 +245,7 @@ footer {
   }
 }
 
-@media screen and (width>1024px){
-
+@media screen and (min-width:1024px){
   .work-experience {
     background-image: url("../images/emile-perron-unsplash-2k.jpg");
     background-size: cover;
@@ -254,15 +253,14 @@ footer {
   }
 }
 
-@media screen and (width>1440px){
-
+@media screen and (min-width:1440px){
   .work-experience {
     background-image: url("../images/emile-perron-unsplash-4k.jpg");
     background-size: cover;
     background-position: left;
   }
+
   .skills {
     color: black;
-  }
-  
+  } 
 }
