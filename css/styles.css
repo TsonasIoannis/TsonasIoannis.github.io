@@ -222,7 +222,7 @@ footer {
   }
 
   .work-experience {
-    background-image: url("../images/emile-perron-unsplash.jpg");
+    background-image: url("../images/emile-perron-unsplash-2k.jpg");
     background-size: cover;
     background-position: top left;
   }
@@ -234,9 +234,10 @@ footer {
   }
 
   .skills {
-    background-image: url("../images/kelly-sikkema-unsplash.jpg");
+    background-image: url("../images/kelly-sikkema-unsplash-1k.jpg");
     background-size: cover;
     background-position: top right;
+    color: black;
   }
 
   .interests {
