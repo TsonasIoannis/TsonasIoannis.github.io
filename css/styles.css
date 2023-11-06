@@ -1,20 +1,11 @@
-/*
-COLOR PALETTE
-https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
-#F7FFF7 - almost white
-#343434 - dark gray - almost black
-#2F3061 - blue dark
-#FFE66D - yellow
-#A1C6D7 - blue light
-*/
-
-
 /* Global styles
-------------------------------------*/
+------------------------------------
+*/
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -22,57 +13,86 @@ body {
   color: #343434;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 }
+
 img {
   width: 300px;
 }
+
 a {
   color: #FFE66D;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 h1 {
-  font-size: 100px;
+  font-size: 46px;
   line-height: 1;
+  text-align: center;
 }
+
 h2 {
-  font-size: 45px;
+  font-size: 26px;
+  text-align: center;
 }
+
 h1, h2 {
-  font-family: 'Caveat', cursive;
+  font-family: Caveat, cursive;
   font-weight: 400;
   margin: 0;
 }
+
 .content-wrap {
   max-width: 800px;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 20px 0;
 }
+
 h3 {
-  margin-bottom: 0;
+  font-size: 16px;
+  margin-bottom: 1px;
 }
+
+ul {
+  padding-left: 1.25em;
+}
+
 .item-details h3 + p {
   font-style: italic;
+  font-size: 14px;
+  padding: 1px 0;
 }
+
 .item-details h3 ~ p {
   margin: 0;
 }
-.divider > section {
+
+.divider-white > section {
   border-bottom: 1px dashed #F7FFF7;
-  padding: 25px 0;
 }
-.divider > section:last-of-type {
+
+.divider-black > section {
+  border-bottom: 1px dashed;
+}
+
+.divider-white > section:last-of-type {
+  border-bottom: none;
+}
+
+.divider-black > section:last-of-type {
   border-bottom: none;
 }
 
 
 /* Profile
-------------------------------------*/
+------------------------------------
+*/
 header {
   background: #2F3061;
   color: #F7FFF7;
@@ -108,35 +128,39 @@ header {
 
 
 /* Work Experience
-------------------------------------*/
+------------------------------------
+*/
 .work-experience {
-  background-image: url(../images/emile-perron-unsplash.jpg);
+  background-image: url("../images/peter-gargiulo-cGNCepznaV8-unsplash.jpg");
   background-size: cover;
   background-position: top left;
-  padding-bottom: 100px;
+  padding-bottom: 16px;
   color: #F7FFF7;
 }
 
 /* Education
-------------------------------------*/
+------------------------------------
+*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-image: url("../images/jason-dent-S53ekmu8KkE-unsplash.jpg");
   background-size: cover;
   background-position: top right;
-  padding-bottom: 100px;
-  color: #F7FFF7;
+  padding-bottom: 16px;
 }
+
 .education p {
   width: 60%;
 }
 
 /* Skills and Achievements
-------------------------------------*/
+------------------------------------
+*/
 .skills {
-  background-image: url(../images/kelly-sikkema-unsplash.jpg);
+  background-image: url("../images/josephine-bredehoft-KsAo8ouBn8A-unsplash.jpg");
   background-size: cover;
   background-position: top center;
-  padding-bottom: 100px;
+  padding-bottom: 16px;
+  color: #F7FFF7;
 }
 
 .skills li {
@@ -144,25 +168,29 @@ header {
 }
 
 /* Interests
-------------------------------------*/
+------------------------------------
+*/
 .interests {
-  background-image: url(../images/jess-bailey-unsplash.jpg);
+  background-image: url("../images/alexander-grey-eMP4sYPJ9x0-unsplash.jpg");
   background-size: cover;
-  background-position: top right;
-  padding-bottom: 100px;
+  background-position: top left;
+  padding-bottom: 16px;
 }
 
 
 /* Contact Info
-------------------------------------*/
+------------------------------------
+*/
 footer {
   background: #343434;
   color: #F7FFF7;
 }
+
 .contact-list {
   list-style-type: none;
   padding: 0;
 }
+
 .contact-list a {
   padding: 15px;
   display: inline-block;
@@ -170,11 +198,13 @@ footer {
 
 
 /* Responsive
-------------------------------------*/
-@media screen and (min-width:750px){
+------------------------------------
+*/
+@media screen and (min-width:768px){
   header, footer {
     text-align: center;
   }
+
   .project-item img {
     float: left;
     margin-right: 20px;
@@ -185,22 +215,52 @@ footer {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
+
   .contact-list {
     display: flex;
     justify-content: center;
   }
+
+  .work-experience {
+    background-image: url("../images/emile-perron-unsplash-2k.jpg");
+    background-size: cover;
+    background-position: top left;
+  }
+
+  .education {
+    background-image: url("../images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .skills {
+    background-image: url("../images/kelly-sikkema-unsplash-1k.jpg");
+    background-size: cover;
+    background-position: top right;
+    color: black;
+  }
+
+  .interests {
+    background-image: url("../images/jess-bailey-unsplash.jpg");
+  }
 }
 
-@media screen and (max-width:749px){
-  h1 {
-    font-size: 75px;
-    line-height: 0.9;
-    margin-bottom: 20px;
+@media screen and (min-width:1024px){
+  .work-experience {
+    background-image: url("../images/emile-perron-unsplash-2k.jpg");
+    background-size: cover;
+    background-position: top left;
   }
-  h2 {
-    line-height: 1;
+}
+
+@media screen and (min-width:1440px){
+  .work-experience {
+    background-image: url("../images/emile-perron-unsplash-4k.jpg");
+    background-size: cover;
+    background-position: left;
   }
-  .contact-list a {
-    padding: 5px;
-  }
+
+  .skills {
+    color: black;
+  } 
 }
