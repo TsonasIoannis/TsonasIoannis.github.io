@@ -107,6 +107,7 @@ header {
 }
 .projects a {
   color: #2F3061;
+  float: right;
 }
 .projects .btn {
   color: #F7FFF7;
