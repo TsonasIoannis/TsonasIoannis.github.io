@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ioannis Tsonas, Full Stack Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ioannis Tsonas, Full Stack Developer</title>
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body>
+    <main>
+      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Ioannis Tsonas</h1>
+          <h2>Full Stack Developer</h2>
+          <h2>Nano-Scientist</h2>
 
-<body>
-  <main>
-    <!-- ***************  ABOUT / PROFILE  **************** -->
-    <header>
-      <div class="content-wrap">
-        <h1>Ioannis Tsonas</h1>
-        <h2>Full Stack Developer</h2>
-        <h2>Nano-Scientist</h2>
+          <p>
+            As a developer, I specialize in creating scalable web applications
+            with .Net Core and React. As a scientist, I focus on nanomaterials
+            and quantum computing.
+          </p>
+          <p>
+            I’m also exploring more creative pursuits assembling and painting
+            miniatures and dioramas.
+          </p>
+          <!-- Add photos and link to photo gallery -->
+        </div>
+      </header>
 
-        <p>As a developer, I specialize in creating scalable web applications with .Net Core and React. As a scientist,
-          I focus on nanomaterials and quantum computing.</p>
-        <p>I’m also exploring more creative pursuits assembling and painting miniatures and dioramas.</p>
-        <!-- Add photos and link to photo gallery -->
-      </div>
-    </header>
-
-    <!-- ************ PROJECTS / PORTFOLIO  ************** -->
-    <section class="projects">
+      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+      <section class="projects">
         <div class="content-wrap divider">
           <h2>Featured Projects</h2>
           <p>View selected projects below.</p>
 
           Project 1
           <section class="project-item">
-            <img src="images/nextjs-logo-square.png" alt="Next.js projects">
+            <img src="images/nextjs-logo-square.png" alt="Next.js projects" />
             <h3>Next.js</h3>
-            <p>Developed a boilerplate application showcasing many common scenarios and popular packages.</p>
-            <a class="btn" href="https://tsonasioannis.github.io/next-boilerplate" target="_blank">Next.js Boilerplate</a>
+            <p>
+              Developed a boilerplate application showcasing many common
+              scenarios and popular packages.
+            </p>
+            <a
+              class="btn"
+              href="https://tsonasioannis.github.io/next-boilerplate"
+              target="_blank"
+              >Next.js Boilerplate</a
+            >
           </section>
 
-          <!-- Project 2
+          Project 2
           <section class="project-item">
-            <img src="images/project-women-tech.jpg" alt="Women and Tech website">
-            <h3>Women&&Tech</h3>
-            <p>Women&&Tech was launched in 2012 to feature interviews with different women working in the tech industry. I became familiar with them when I was invited to be one of the interviewees! A few years later, I joined the team and helped with the relaunch of the site as the front-end architect.</p>
-            <a class="btn" href="http://christinatruong.com/projects/women-and-tech-redesign.html" target="_blank">View the case study</a>
+            <img
+              src="images/terraform-logo.jpg"
+              alt="Terraform GKE Prometheus Grafana Cloudflare"
+            />
+            <h3>Terraform</h3>
+            <p>
+              This project contains Terraform configurations for deploying
+              and managing an infrastructure stack with Google Kubernetes
+              Engine (GKE), Cloudflare and with Prometheus and Grafana for
+              robust monitoring and visualization.
+            </p>
+            <a
+              class="btn"
+              href="https://github.com/TsonasIoannis/terraform-gke-cloudflare-prometheus-grafana"
+              target="_blank"
+              >View the repository</a
+            >
           </section>
-
+          <!-- 
           Project 3
           <section class="project-item">
             <img src="images/project-wire-ipsum.jpg" alt="The Wire Ipsum website">
@@ -57,217 +86,273 @@
         </div>
       </section>
 
-    <!-- ****************  WORK EXPERIENCE  ******************** -->
-    <section class="work-experience">
-      <div class="content-wrap item-details divider-white">
-        <h2>Work Experience</h2>
-        <p>See my complete work history on <a href="https://www.linkedin.com/in/john-tsonas/">LinkedIn</a>.</p>
+      <!-- ****************  WORK EXPERIENCE  ******************** -->
+      <section class="work-experience">
+        <div class="content-wrap item-details divider-white">
+          <h2>Work Experience</h2>
+          <p>
+            See my complete work history on
+            <a href="https://www.linkedin.com/in/john-tsonas/">LinkedIn</a>.
+          </p>
 
-        <!-- Job 1 -->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Senior Developer &amp;
-              IT Administrator</h3>
-            <p>SIME Diagnostics Ltd, London, Uk</p>
-            <p>October 2019-Present</p>
-          </div>
-          <div class="job-summary">
+          <!-- Job 1 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Senior Developer &amp; IT Administrator</h3>
+              <p>SIME Diagnostics Ltd, London, Uk</p>
+              <p>October 2019-Present</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>
+                  Developed company web and desktop app. Stack:
+                  <ul>
+                    <li>React+Electron for UI</li>
+                    <li>Nestjs for backend and microservices</li>
+                    <li>MongoDB &amp; PostgreSQL for storage</li>
+                    <li>Kratos API for authentication</li>
+                    <li>
+                      Docker images deployed to Kubernetes via Helm charts
+                    </li>
+                  </ul>
+                </li>
+                <li>Deploy and manage cloud infrastructure with Terraform</li>
+                <li>
+                  Deploy and manage Prometheus &amp; Grafana monitoring platform
+                </li>
+                <li>CI/CD with Github actions and Azure Devops.</li>
+                <li>
+                  Azure services global administrator (Azure SQL server, AKS,
+                  Functions, Virtual Networks).
+                </li>
+                <li>
+                  Data integration from clinical trials. Data analysis and
+                  visualization (Power BI).
+                </li>
+                <li>
+                  Applied Machine Learning and AI algorithms (SVM, Classifiers,
+                  Neural Networks).
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Job 2 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Assistant Accountant</h3>
+              <p>Tsonas Georgios Accountant, Thessaloniki, Greece</p>
+              <p>January 2017 - June 2016</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>
+                  Assisted in the development and maintenance of our office’s
+                  database system.
+                </li>
+                <li>
+                  Updated the financial data records of client companies in our
+                  in-house database system; cross referenced ourdatabase with
+                  our clients’ databases using SQL environment
+                </li>
+                <li>
+                  Completed bank transactions including expenses and tax
+                  payments in a monthly basis; involved in collectinginvoices,
+                  filling and filing documents and keeping track of receipts.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Job 3 -->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Summer Internship</h3>
+              <p>
+                Parallel Algorithms for Data Analysis and Simulation Research
+                Group, University of Texas, Austin, US
+              </p>
+              <p>July 2014 - September 2014</p>
+            </div>
+            <div class="job-summary">
+              <ul>
+                <li>
+                  Analyzed medical images, in particular segmentation and
+                  classification of Magnetic Resonance Imaging(MRI) scan images
+                  of patients with a brain tumor.
+                </li>
+                <li>
+                  Developed MatLab scripts, compared different affine
+                  registration models and tested on 2D and 3D images.
+                </li>
+                <li>
+                  Tested algorithms for image registration, image feature
+                  extraction and unsupervised clustering.
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
+      <section class="education">
+        <div class="content-wrap item-details divider-black">
+          <h2>Education</h2>
+
+          <section>
+            <h3>University College London (UCL), UK</h3>
+            <p>MSc Nanotechnology, 2019</p>
+            <div class="school-summary">
+              <ul>
+                <li>Grade: Distinction (Best Overall Student Prize Award)</li>
+                <li>
+                  Relevant Coursework:
+                  <ul>
+                    <li>Nanoscale Processing and Characterisation</li>
+                    <li>Experimental Techniques</li>
+                    <li>Quantum Computation and Communication</li>
+                    <li>Physics of Advanced Materials</li>
+                    <li>Molecular Physics</li>
+                  </ul>
+                </li>
+                <li>
+                  Research Project: “Studying the effect of the size of
+                  manganese ferrite nanoparticles in electrochemical properties
+                  for applications in microbial fuel cells” (Distinction)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h3>Aristotle University - Thessaloniki, GR</h3>
+            <p>Diploma in Electrical and Computer Engineering, 2011-2017</p>
+            <div class="school-summary">
+              <ul>
+                <li>Grade: 7.17/10</li>
+                <li>
+                  Relevant Coursework:
+                  <ul>
+                    <li>Structured Programming (C#)</li>
+                    <li>Programming Techniques (C++)</li>
+                    <li>Data Structures (Java)</li>
+                    <li>Numerical Analysis</li>
+                    <li>Probability and Statistics</li>
+                    <li>Applied Mathematics</li>
+                    <li>Differential Equations</li>
+                  </ul>
+                </li>
+                <li>
+                  Diploma Thesis: “Synthesis of magnetic iron oxide
+                  nanoparticles and size calculation using X-ray diffraction and
+                  magnetometry methods” (Grade: 10/10)
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h3>1st High School - Vasilika, GR</h3>
+            <p>High School Apolytirion, 2005-2011</p>
+            <div class="school-summary">
+              <ul>
+                <li>Grade: 19.3/20 (1st in Direction, top 1% in School)</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- *************  SKILLS, ACHIEVEMENTS *********** -->
+      <section class="skills">
+        <div class="content-wrap item-details divider-black">
+          <h2>Skills &amp; Achievements</h2>
+
+          <section>
+            <h3>Languages</h3>
             <ul>
-              <li>Developed company web and desktop app. Stack:
-                <ul>
-                  <li>React+Electron for UI</li>
-                  <li>Nestjs for backend and microservices</li> 
-                  <li>MongoDB &amp;
-                    PostgreSQL for storage</li>
-                  <li>Kratos API for authentication</li>
-                  <li>Docker images deployed to Kubernetes via Helm charts</li>
-                </ul> 
-              </li>
-              <li>Deploy and manage cloud infrastructure with Terraform</li>
-              <li>Deploy and manage Prometheus &amp;
-                Grafana monitoring platform</li>
-              <li>CI/CD with Github actions and Azure Devops.</li>
-              <li>Azure services global administrator (Azure SQL server, AKS, Functions, Virtual Networks).</li>
-              <li>Data integration from clinical trials. Data analysis and visualization (Power BI).</li>
-              <li>Applied Machine Learning and AI algorithms (SVM, Classifiers, Neural Networks).</li>
+              <li>Greek: Native</li>
+              <li>English: Fluent</li>
             </ul>
-          </div>
-        </section>
+          </section>
 
-        <!-- Job 2 -->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Assistant Accountant</h3>
-            <p>Tsonas Georgios Accountant, Thessaloniki, Greece</p>
-            <p>January 2017 - June 2016</p>
-          </div>
-          <div class="job-summary">
+          <section>
+            <h3>Technologies Stack</h3>
             <ul>
-              <li>Assisted in the development and maintenance of our office’s database system.</li>
-              <li>Updated the financial data records of client companies in our in-house database system; cross
-                referenced ourdatabase with our clients’ databases using SQL environment</li>
-              <li>Completed bank transactions including expenses and tax payments in a monthly basis; involved in
-                collectinginvoices, filling and filing documents and keeping track of receipts.
-              </li>
+              <li>C#: ASP.Net Core, Identity Server, Entity Framework</li>
+              <li>HTML/CSS</li>
+              <li>React: Redux, Jest, Enzyme, Cucumber</li>
+              <li>Azure SQL/Cosmos</li>
+              <li>Terraform</li>
+              <li>Python: Scikit, Tensorflow</li>
+              <li>Console Applications: C, C++, Java</li>
             </ul>
-          </div>
-        </section>
+          </section>
 
-        <!-- Job 3 -->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Summer Internship</h3>
-            <p>Parallel Algorithms for Data Analysis and Simulation Research Group, University of Texas, Austin, US</p>
-            <p>July 2014 - September 2014</p>
-          </div>
-          <div class="job-summary">
+          <section>
+            <h3>Achievements</h3>
             <ul>
-              <li>Analyzed medical images, in particular segmentation and classification of Magnetic Resonance
-                Imaging(MRI) scan images of patients with a brain tumor.</li>
-              <li>Developed MatLab scripts, compared different affine registration models and tested on 2D and 3D
-                images.</li>
-              <li>Tested algorithms for image registration, image feature extraction and unsupervised clustering.</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </section>
-
-    <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
-    <section class="education">
-      <div class="content-wrap item-details divider-black">
-        <h2>Education</h2>
-
-        <section>
-          <h3>University College London (UCL), UK</h3>
-          <p>MSc Nanotechnology, 2019</p>
-          <div class="school-summary">
-            <ul>
-              <li>Grade: Distinction (Best Overall Student Prize Award)</li>
-              <li>Relevant Coursework:
-                <ul>
-                  <li>Nanoscale Processing and Characterisation</li>
-                  <li>Experimental Techniques</li>
-                  <li>Quantum Computation and Communication</li>
-                  <li>Physics of Advanced Materials</li>
-                  <li>Molecular Physics</li>
-                </ul>
+              <li>
+                Author and Speaker at the “13th Student Conference in Management
+                Science and Technology” Paper: “Cost Analysis of Cloud Computing
+                and Its Applications in Greek Businesses”
               </li>
               <li>
-                Research Project: “Studying the effect of the size of manganese ferrite nanoparticles in electrochemical
-                properties for applications in microbial fuel cells” (Distinction)
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Aristotle University - Thessaloniki, GR</h3>
-          <p>Diploma in Electrical and Computer Engineering, 2011-2017</p>
-          <div class="school-summary">
-            <ul>
-              <li>Grade: 7.17/10</li>
-              <li>Relevant Coursework:
-                <ul>
-                  <li>Structured Programming (C#)</li>
-                  <li>Programming Techniques (C++)</li>
-                  <li>Data Structures (Java)</li>
-                  <li>Numerical Analysis</li>
-                  <li>Probability and Statistics</li>
-                  <li>Applied Mathematics</li>
-                  <li>Differential Equations</li>
-                </ul>
+                GRE (Quantitative 167|93%, Verbal 160|85%), TOEFL (Total
+                114/120)
               </li>
               <li>
-                Diploma Thesis: “Synthesis of magnetic iron oxide nanoparticles and size calculation using X-ray
-                diffraction and magnetometry methods” (Grade: 10/10)</li>
+                LinkedIn Learning Path Certifications: Advance your skills as an
+                Azure Administrator, Become a Data Scientist
+              </li>
+              <li>
+                Statement of Accomplishment in Machine Learning and Game Theory
+                (Coursera)
+              </li>
+              <li>
+                4 consecutive distinctions in the National Mathematical Student
+                Competition in High School
+              </li>
             </ul>
-          </div>
-        </section>
+          </section>
+        </div>
+      </section>
 
-        <section>
-          <h3>1st High School - Vasilika, GR</h3>
-          <p>High School Apolytirion, 2005-2011</p>
-          <div class="school-summary">
+      <!-- *************  Interests *********** -->
+      <section class="interests">
+        <div class="content-wrap item-details">
+          <h2>Interests</h2>
+
+          <section>
             <ul>
-              <li>Grade: 19.3/20 (1st in Direction, top 1% in School)</li>
+              <li>Chess</li>
+              <li>Miniature Painting</li>
+              <li>Book Reading</li>
+              <li>STEM Ambassador</li>
             </ul>
-          </div>
-        </section>
-      </div>
-    </section>
+          </section>
+        </div>
+      </section>
 
-    <!-- *************  SKILLS, ACHIEVEMENTS *********** -->
-    <section class="skills">
-      <div class="content-wrap item-details divider-black">
-        <h2>Skills &amp;
-          Achievements</h2>
+      <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-        <section>
-          <h3>Languages</h3>
-          <ul>
-            <li>Greek: Native</li>
-            <li>English: Fluent</li>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li>
+              <a href="mailto:johntsonas@hotmail.com">johntsonas@hotmail.com</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/john-tsonas/" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
           </ul>
-        </section>
-
-        <section>
-          <h3>Technologies Stack</h3>
-          <ul>
-            <li>C#: ASP.Net Core, Identity Server, Entity Framework</li>
-            <li>HTML/CSS</li>
-            <li>React: Redux, Jest, Enzyme, Cucumber</li>
-            <li>Azure SQL/Cosmos</li>
-            <li>Terraform</li>
-            <li>Python: Scikit, Tensorflow</li>
-            <li>Console Applications: C, C++, Java</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Achievements</h3>
-          <ul>
-            <li>Author and Speaker at the “13th Student Conference in Management Science and Technology”
-              Paper: “Cost Analysis of Cloud Computing and Its Applications in Greek Businesses”</li>
-            <li>GRE (Quantitative 167|93%, Verbal 160|85%), TOEFL (Total 114/120)</li>
-            <li>LinkedIn Learning Path Certifications: Advance your skills as an Azure Administrator, Become a Data
-              Scientist</li>
-            <li>Statement of Accomplishment in Machine Learning and Game Theory (Coursera)</li>
-            <li>4 consecutive distinctions in the National Mathematical Student Competition in High School</li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <!-- *************  Interests *********** -->
-    <section class="interests">
-      <div class="content-wrap item-details">
-        <h2>Interests</h2>
-
-        <section>
-          <ul>
-            <li>Chess</li>
-            <li>Miniature Painting</li>
-            <li>Book Reading</li>
-            <li>STEM Ambassador</li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
-    <footer>
-      <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
-
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul class="contact-list">
-          <li><a href="mailto:johntsonas@hotmail.com">johntsonas@hotmail.com</a></li>
-          <li><a href="https://www.linkedin.com/in/john-tsonas/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
-    </footer>
-  </main>
-</body>
-
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
